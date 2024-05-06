@@ -1,1 +1,97 @@
-/* Write your CSS here! */
+html{
+    background-color:black;
+}
+@keyframes titleEffect{
+    from {color: rgb(248, 242, 235);}
+    to {color: rgb(248, 242, 235); text-shadow: 2px 2px 5px rgb(15, 245, 11);}
+}
+#mainHeading{
+    animation-name: titleEffect;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: red;
+}
+p{
+    color:antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align:justify;
+}
+@keyframes funEffect{
+    from{color:antiquewhite;}
+    to{color:rgb(234, 179, 113);}
+}
+.funParagraph{
+    animation-name: funEffect;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align:justify;
+    color: green;
+    
+}
+figcaption{
+    color:aqua;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.picLink{
+    color:aquamarine;
+}
+body{
+    margin: 8px;
+    display: block;
+}
+footer{
+    padding-top: 50px;
+    color: antiquewhite;
+    font-size: smaller;
+    text-align: center;
+}
+img{
+    padding-top: 30px;
+    max-width: 100%;
+    min-width: 500px;
+    border: 0;
+    margin:auto;
+}
+main{
+    width: 1000px;
+    margin:auto;
+}
+#collection{
+    max-width: 650px;
+    display: block;
+    margin:auto;
+}
+.crtTrans{
+    max-width: 100%;
+    min-width: 500px;
+    border: 0;
+    margin:auto;
+    display: inline-block;
+    position: relative;
+ }
+ .crtTrans .img-top{
+    display: none;
+    max-width: 100%;
+    min-width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 99;
+        border: 0;
+        margin:auto;
+ }
+ .crtTrans:hover .img-top{ 
+     display: inline;
+ }
